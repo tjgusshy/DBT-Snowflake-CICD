@@ -1,0 +1,34 @@
+# dbt allows you to create snapshots, transform, test, deploy, document.
+# no version control  in sql, and maintainability (change of column) done manually
+# etl tools requires a lot of expertise to maintain this tools
+# dbt is simple to use, and easy to maintain
+# modularity: break down complex tranf into manageable pieces
+# reusability: create and reuse common sql pattern acorss your project
+# document generation: auto generate a document
+# dependency mgt: auto hadling of the order of the  model
+# development workflow: allows you to work in dev and production environment.
+
+# steps to recreate--
+
+# use .requirments.txt for installation using uv
+
+# pip install -r .requirements.txt
+# dbt init <project_name>
+# cd <project_name>
+# $ uv venv env to activate uv venv env if you are using uv. 
+
+# dbt materialiazation == strategies for for persisting dn=bt models == table, view, incremental, ephemeral
+# better to create your materialiazation in your project.yml
+# but the model level cong takes precedence and can also be done in your properties
+# create incremental load for fct table
+# create ephemeral
+# dbt runs any file_manager based on it description in the project.yml e.g: model-paths: ["models"]
+# analysis-paths: ["analyses"]
+# test-paths: ["tests"]
+# seed-paths: ["seeds"]
+# macro-paths: ["macros"]
+# snapshot-paths: ["snapshots"]
+# using of seeds
+# sources.yml allows you to define your source database and use of source function
+# dbt run-operation <macro_name> --args '{"arg1": "value
+cd .requirments.txt

@@ -1,1 +1,2 @@
-# DBT-Snowflake-CICD
+# dbt
+# dbt-aws

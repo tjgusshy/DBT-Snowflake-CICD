@@ -1,0 +1,253 @@
+[0m15:24:09.973850 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:24:10.251537 | 13440d44-be43-407d-b583-f2737a4f3740 ==============================
+[0m15:24:10.251537 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:24:10.251537 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt init', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\ADETUNJI\\.dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m15:25:02.283903 [debug] [MainThread]: Starter project path: C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\.venv\Lib\site-packages\dbt\include\starter_project
+[0m15:25:02.369954 [info ] [MainThread]: 
+Your new dbt project "snowflake_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:25:02.369954 [info ] [MainThread]: Setting up your profile.
+[0m15:30:17.829880 [info ] [MainThread]: Profile snowflake_dbt written to C:\Users\ADETUNJI\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:30:17.835320 [debug] [MainThread]: Command `dbt init` succeeded at 15:30:17.835320 after 367.90 seconds
+[0m15:30:17.836419 [debug] [MainThread]: Flushing usage events
+[0m15:32:30.400903 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:32:30.511351 | a73d3028-479e-4690-bc87-f9e1160e593b ==============================
+[0m15:32:30.511351 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:32:30.511351 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\ADETUNJI\\.dbt', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m15:32:30.706773 [info ] [MainThread]: dbt version: 1.10.11
+[0m15:32:30.706773 [info ] [MainThread]: python version: 3.12.10
+[0m15:32:30.706773 [info ] [MainThread]: python path: C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\.venv\Scripts\python.exe
+[0m15:32:30.706773 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:32:30.722730 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.databricks'
+[0m15:32:36.136750 [info ] [MainThread]: Using profiles dir at C:\Users\ADETUNJI\.dbt
+[0m15:32:36.136750 [info ] [MainThread]: Using profiles.yml file at C:\Users\ADETUNJI\.dbt\profiles.yml
+[0m15:32:36.136750 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\dbt_project.yml
+[0m15:32:36.136750 [info ] [MainThread]: Configuration:
+[0m15:32:36.136750 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m15:32:36.136750 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:32:36.136750 [info ] [MainThread]: Required dependencies:
+[0m15:32:36.136750 [debug] [MainThread]: Executing "git --help"
+[0m15:32:36.167942 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:32:36.167942 [debug] [MainThread]: STDERR: "b''"
+[0m15:32:36.167942 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:32:36.173085 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:32:36.173588 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:32:36.173588 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_eTl", target "dev" invalid: Runtime Error
+    Could not find adapter type databricks!
+
+
+[0m15:32:36.173588 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\dbt_project.yml> not found
+
+[0m15:32:36.173588 [debug] [MainThread]: Command `dbt debug` failed at 15:32:36.173588 after 5.82 seconds
+[0m15:32:36.173588 [debug] [MainThread]: Flushing usage events
+[0m15:34:21.854495 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:34:21.939830 | 221e8cf6-ad5a-4891-a6ad-679e45965b5e ==============================
+[0m15:34:21.939830 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:34:21.939830 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt debug', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\ADETUNJI\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m15:34:21.970914 [info ] [MainThread]: dbt version: 1.10.11
+[0m15:34:21.970914 [info ] [MainThread]: python version: 3.12.10
+[0m15:34:21.970914 [info ] [MainThread]: python path: C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\.venv\Scripts\python.exe
+[0m15:34:21.970914 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:34:21.985558 [error] [MainThread]: Encountered an error:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | 
+    2  |   target: dev
+    3  | snowflake_dbt:
+    4  |   outputs:
+    5  |     dev:
+    6  |       account: IZRCVZI-CL78998
+    
+    Raw Error:
+    ------------------------------
+    did not find expected <document start>
+      in "<unicode string>", line 3, column 1
+  
+[0m15:34:21.987115 [debug] [MainThread]: Command `dbt debug` failed at 15:34:21.987115 after 0.14 seconds
+[0m15:34:21.987115 [debug] [MainThread]: Flushing usage events
+[0m15:35:10.682316 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:35:10.746197 | cdb53381-becf-4b70-af92-d3d748671cef ==============================
+[0m15:35:10.746197 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:35:10.746197 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'empty': 'None', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\ADETUNJI\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m15:35:10.762890 [info ] [MainThread]: dbt version: 1.10.11
+[0m15:35:10.762890 [info ] [MainThread]: python version: 3.12.10
+[0m15:35:10.778336 [info ] [MainThread]: python path: C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\.venv\Scripts\python.exe
+[0m15:35:10.778336 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:35:10.780077 [error] [MainThread]: Encountered an error:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Runtime Error
+    Syntax error near line 2
+    ------------------------------
+    1  |  target: dev
+    2  | snowflake_dbt:
+    3  |   outputs:
+    4  |     dev:
+    5  |       account: IZRCVZI-CL78998
+    
+    Raw Error:
+    ------------------------------
+    did not find expected <document start>
+      in "<unicode string>", line 2, column 1
+  
+[0m15:35:10.782917 [debug] [MainThread]: Command `dbt debug` failed at 15:35:10.782146 after 0.10 seconds
+[0m15:35:10.782917 [debug] [MainThread]: Flushing usage events
+[0m15:40:33.617603 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:40:33.691729 | c68774e7-017f-4d44-b902-8d5ab8d69173 ==============================
+[0m15:40:33.691729 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:40:33.691729 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'empty': 'None', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'logs', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\ADETUNJI\\.dbt'}
+[0m15:42:19.842643 [debug] [MainThread]: Starter project path: C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\.venv\Lib\site-packages\dbt\include\starter_project
+[0m15:42:19.879481 [info ] [MainThread]: 
+Your new dbt project "snowflake_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:42:19.879481 [info ] [MainThread]: Setting up your profile.
+[0m15:44:27.883231 [info ] [MainThread]: Profile snowflake_dbt written to C:\Users\ADETUNJI\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:44:27.883231 [debug] [MainThread]: Command `dbt init` succeeded at 15:44:27.883231 after 234.32 seconds
+[0m15:44:27.883231 [debug] [MainThread]: Flushing usage events
+[0m15:44:50.068926 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:44:50.150780 | fea92577-03cc-41a7-ac60-34353ad2cf9d ==============================
+[0m15:44:50.150780 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:44:50.150780 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\ADETUNJI\\.dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m15:44:50.170684 [info ] [MainThread]: dbt version: 1.10.11
+[0m15:44:50.185831 [info ] [MainThread]: python version: 3.12.10
+[0m15:44:50.186503 [info ] [MainThread]: python path: C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\.venv\Scripts\python.exe
+[0m15:44:50.187463 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:44:50.187463 [info ] [MainThread]: target not specified in profile 'dbt_eTl', using 'default'
+[0m15:44:50.502669 [info ] [MainThread]: Using profiles dir at C:\Users\ADETUNJI\.dbt
+[0m15:44:50.503768 [info ] [MainThread]: Using profiles.yml file at C:\Users\ADETUNJI\.dbt\profiles.yml
+[0m15:44:50.503768 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\dbt_project.yml
+[0m15:44:50.504886 [info ] [MainThread]: Configuration:
+[0m15:44:50.504886 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m15:44:50.505765 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:44:50.505765 [info ] [MainThread]: Required dependencies:
+[0m15:44:50.506767 [debug] [MainThread]: Executing "git --help"
+[0m15:44:50.536461 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:44:50.537970 [debug] [MainThread]: STDERR: "b''"
+[0m15:44:50.537970 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:44:50.537970 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:44:50.537970 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:44:50.537970 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  The profile 'dbt_eTl' does not have a target named 'default'. The valid target names for this profile are:
+   - dev
+
+
+[0m15:44:50.537970 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\dbt_project.yml> not found
+
+[0m15:44:50.537970 [debug] [MainThread]: Command `dbt debug` failed at 15:44:50.537970 after 0.53 seconds
+[0m15:44:50.537970 [debug] [MainThread]: Flushing usage events
+[0m15:46:39.699064 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:46:39.772603 | 6aa5e817-a570-4aea-80ad-19de09d31379 ==============================
+[0m15:46:39.772603 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:46:39.772603 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run --profile profile2', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'empty': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\ADETUNJI\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m15:46:39.772603 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:46:39.772603 [debug] [MainThread]: Command `dbt run` failed at 15:46:39.772603 after 0.13 seconds
+[0m15:46:39.772603 [debug] [MainThread]: Flushing usage events
+[0m15:48:13.608403 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:48:13.666449 | 390220da-f27a-40e6-bdf6-ef5c6c4410eb ==============================
+[0m15:48:13.666449 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:48:13.666449 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run --profile profile2', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\ADETUNJI\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m15:48:13.666449 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:48:13.666449 [debug] [MainThread]: Command `dbt run` failed at 15:48:13.666449 after 0.11 seconds
+[0m15:48:13.666449 [debug] [MainThread]: Flushing usage events
+[0m15:48:56.093030 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:48:56.156435 | 7710bbf4-5c6d-4ce8-b5fc-d7890553a963 ==============================
+[0m15:48:56.156435 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:48:56.156435 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run --profile profile2', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\ADETUNJI\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m15:48:56.156435 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:48:56.156435 [debug] [MainThread]: Command `dbt run` failed at 15:48:56.156435 after 0.12 seconds
+[0m15:48:56.156435 [debug] [MainThread]: Flushing usage events
+[0m15:50:22.405891 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:50:22.488705 | 8e395305-6830-4eb8-8ec8-6f4761315f60 ==============================
+[0m15:50:22.488705 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:50:22.488705 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\ADETUNJI\\.dbt', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run --profile snowflake_dbt', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m15:50:22.489843 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\ADETUNJI\Documents\new_school_files\dbt_aws\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:50:22.490851 [debug] [MainThread]: Command `dbt run` failed at 15:50:22.490851 after 0.13 seconds
+[0m15:50:22.491887 [debug] [MainThread]: Flushing usage events
+[0m22:48:35.208808 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 22:48:39.544305 | 1952104c-015a-4ac2-9d1c-19cf048947e9 ==============================
+[0m22:48:39.544305 [info ] [MainThread]: Running with dbt=1.10.11
+[0m22:48:39.546305 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\ADETUNJI\\.dbt', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m22:48:40.151740 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m22:48:40.235122 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m22:48:40.237123 [debug] [MainThread]: Command `cli deps` succeeded at 22:48:40.236122 after 5.16 seconds
+[0m22:48:40.238123 [debug] [MainThread]: Flushing usage events
